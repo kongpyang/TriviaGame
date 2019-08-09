@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manny Pacquiao Trivia</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" type="text/css" href= "assets/css/styles.css">
-
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Manny Questions</title>
+   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
+<body background="assets/images/pac5.jpg">   
+   
+    <div id="container">
+       <header>
+           <h1>Manny "PACMAN" Trivia</h1>
+       </header>
+       <section>
+           <br>
+           <br>
+           <div id="time"></div>
+           <button id="start" class="startQuiz" >Start</button>
+           <h3 id="result"></h3>
+       </section>
 
-<body>
-  
-<button type="button" class="btn btn-primary btn-lg btn-block">CLICK START</button>
-
-<h1> From Blue Corner... Manny Pacquiao Trivia!!!</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!--Create 4 questions and answers.-->
+       <form id="formEl" name="manny" onsubmit="return questions()">
+           <h3>Currently, how many knockouts does Pacman have under his belt? </h3>
+           <input type="radio" name="knockouts" value="a" id="quest1">35 <br>
+           <input type="radio" name="knockouts" value="b" id="quest1">44 <br>
+           <input type="radio" name="knockouts" value="c" id="quest1">38 <br>
+           <input type="radio" name="knockouts" value="d" id="quest1">42 <br>
 
 
+           <h3>At what age did Manny have his first professional debute match?</h3>
+           <input type="radio" name="professional" value="a" id="quest2"> 20 <br>
+           <input type="radio" name="professional" value="b" id="quest2"> 22 <br>
+           <input type="radio" name="professional" value="c" id="quest2"> 16 <br>
+           <input type="radio" name="professional" value="d" id="quest2"> 18 <br>
 
 
-    
+           <h3>Who did Pacquiao fight to became the oldest welterweight world champion in the history of boxing at the age of 40?</h3>
+           <input type="radio" name="champion" value="a" id="quest3">Keith Thurman<br>
+           <input type="radio" name="champion" value="b" id="quest3">Miguel Cotto<br>
+           <input type="radio" name="champion" value="c" id="quest3">Erik Morales<br>
+           <input type="radio" name="champion" value="d" id="quest3">Oscar De La Hoya<br>
+
+           
+           <h3>Pacquiao is the reigning WBA (Super) welterweight world champion and is ranked as the world's eighth best active boxer, round-for-sound, by the Transnational Boxing Rankings Board?</h3>
+           <input type="radio" name="rankings"value="a" id="quest4">False<br>
+           <input type="radio" name="rankings"value="b" id="quest4"> True<br>
+        
+           
+        <!--Create Submit Button (BTN).-->
+
+           <br><br>
+           <input type="submit" value="Submit" class="btn">
+       </form>
+   </div>
+   <script src="assets/javascript/app.js"></script>
 </body>
 </html>
